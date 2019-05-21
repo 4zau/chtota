@@ -32,6 +32,7 @@ class bullet:
             self.x-=5
         if self.nap =='r':
             self.x+=5
+        #с врагом столкновения
 class enemy:
     def __init__(self,x,y):
         self.x=x
@@ -54,6 +55,7 @@ class enemy:
                 self.kd=300
         else:
             self.kd-=1
+        #с персонажем столкновения
 DISPLAYSURF = pygame.display.set_mode((W, H))
 clock = pygame.time.Clock()
 while True:
